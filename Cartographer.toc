@@ -1,5 +1,5 @@
 ## Interface: 11200
-## Title: Cartographer |cff7fff7f -Ace2-|r
+## Title: Cartographer |cffcccccc[TurtleWoW] |cff7fff7f -Ace2-|r
 ## Notes: Addon to manipulate the map
 ## Notes-ruRU: Аддон для манипуляций с картой.
 ## Author: ckknight
