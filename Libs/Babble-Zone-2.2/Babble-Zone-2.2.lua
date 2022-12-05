@@ -1,6 +1,6 @@
 --[[
 	Name: Babble-Zone-2.2
-	Revision: $Rev: 17779 $
+	Revision: $Rev: 17780 $
 	Author(s): ckknight (ckknight@gmail.com)
 	Website: http://ckknight.wowinterface.com/
 	Documentation: http://wiki.wowace.com/index.php/Babble-Zone-2.2
@@ -10,7 +10,7 @@
 ]]
 
 local MAJOR_VERSION = "Babble-Zone-2.2"
-local MINOR_VERSION = tonumber(string.sub("$Revision: 17779 $", 12, -3))
+local MINOR_VERSION = tonumber(string.sub("$Revision: 17780 $", 12, -3))
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 
@@ -173,6 +173,14 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Karazhan"] = true,
 		["Caverns of Time"] = true,
 		["Zul'Aman"] = true,
+
+		-- Turtle WoW
+		["Amani'alor"] = true,
+		["Tel'Abim"] = true,
+		["Alah'thalas"] = true,
+		["Lapidis Isle"] = true,
+		["Gillijim's isle"] = true,
+		["Scarlet Enclave"] = true,
 	}
 end)
 
