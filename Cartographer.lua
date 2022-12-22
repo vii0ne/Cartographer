@@ -12,6 +12,9 @@ local BZ = AceLibrary("Babble-Zone-2.2")
 BINDING_HEADER_CARTOGRAPHER = "Cartographer"
 BINDING_NAME_CARTOGRAPHER_OPENALTERNATEMAP = "Open alternate map"
 
+-- Override continents list so they don't pollute map selection
+function GetMapContinents() return unpack({ 'Kalimdor', 'Eastern Kingdoms' }) end
+
 L:RegisterTranslations("enUS", function() return {
 	["Active"] = true,
 	["Suspend/resume this module."] = true,
