@@ -1,16 +1,12 @@
 ## Interface: 11200
 ## Title: Cartographer |cffcccccc[TurtleWoW] |cff7fff7f -Ace2-|r
+## Version: 2.0.2
 ## Notes: Addon to manipulate the map
-## Notes-ruRU: Аддон для манипуляций с картой.
-## Author: ckknight
-## DefaultState: enabled
-## LoadOnDemand: 0
 ## SavedVariables: CartographerDB
 ## OptionalDeps: Ace2, Babble-2.2, DewdropLib, TabletLib, TouristLib
+## DefaultState: enabled
+## LoadOnDemand: 0
 ## X-Category: Map
-## X-eMail: ckknight@gmail.com
-## X-Website: http://ckknight.wowinterface.com/
-## Version: 2.02
 
 Libs\AceLibrary\AceLibrary.lua
 Libs\AceOO-2.0\AceOO-2.0.lua
