@@ -13,7 +13,7 @@ BINDING_HEADER_CARTOGRAPHER = "Cartographer"
 BINDING_NAME_CARTOGRAPHER_OPENALTERNATEMAP = "Open alternate map"
 
 -- Override continents list so they don't pollute map selection
-function GetMapContinents() return unpack({ 'Kalimdor', 'Eastern Kingdoms' }) end
+function GetCustomMapContinents() return unpack({ 'Kalimdor', 'Eastern Kingdoms' }) end
 
 L:RegisterTranslations("enUS", function() return {
 	["Active"] = true,
@@ -100,7 +100,7 @@ function Cartographer:OnInitialize()
 		},
 	}
 	
-	for i,continent in ipairs { GetMapContinents() } do
+	for i,continent in ipairs { GetCustomMapContinents() } do
 		local i = i
 		local validate = { GetMapZones(i) }
 		self.gotoOptions.args[string.gsub(continent, " ", "-")] = {
@@ -222,7 +222,7 @@ function Cartographer:Cartographer_MapClosed()
 	SetMapToCurrentZone()
 end
 
-local continents = { GetMapContinents() }
+local continents = { GetCustomMapContinents() }
 continents[0] = L["Azeroth"]
 continents[-1] = L["Cosmic map"]
 
