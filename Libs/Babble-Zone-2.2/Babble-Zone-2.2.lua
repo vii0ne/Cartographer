@@ -179,7 +179,7 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Tel'Abim"] = true,
 		["Alah'thalas"] = true,
 		["Lapidis Isle"] = true,
-		["Gillijim's isle"] = true,
+		["Gillijim's Isle"] = true,
 		["Scarlet Enclave"] = true,
 	}
 end)
