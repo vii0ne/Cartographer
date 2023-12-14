@@ -1,12 +1,12 @@
 --[[
-	Name: Babble-Zone-2.2
-	Revision: $Rev: 17780 $
-	Author(s): ckknight (ckknight@gmail.com)
-	Website: http://ckknight.wowinterface.com/
-	Documentation: http://wiki.wowace.com/index.php/Babble-Zone-2.2
-	SVN: http://svn.wowace.com/root/trunk/Babble-2.2/Babble-Zone-2.2
-	Description: A library to provide localizations for zones.
-	Dependencies: AceLibrary, AceLocale-2.2
+Name: Babble-Zone-2.2
+Revision: $Rev: 17779 $
+Author(s): ckknight (ckknight@gmail.com)
+Website: http://ckknight.wowinterface.com/
+Documentation: http://wiki.wowace.com/index.php/Babble-Zone-2.2
+SVN: http://svn.wowace.com/root/trunk/Babble-2.2/Babble-Zone-2.2
+Description: A library to provide localizations for zones.
+Dependencies: AceLibrary, AceLocale-2.2
 ]]
 
 local MAJOR_VERSION = "Babble-Zone-2.2"
@@ -28,6 +28,26 @@ local BabbleZone = AceLibrary("AceLocale-2.2"):new(MAJOR_VERSION)
 
 BabbleZone:RegisterTranslations("enUS", function()
 	return {
+		["Blackrock Spire"] = true,
+		["Alah'thalas"] = true,
+		["Amani'Alor"] = true,
+		["Crescent Grove"] = true,
+		["Emerald Sanctum"] = true,
+		["Gillijim's Isle"] = true,
+		["Gilneas City"] = true,
+		["Gilneas"] = true,
+		["Hateforge Quarry"] = true,
+		["Icepoint Rock"] = true,
+		["Karazhan Crypt"] = true,
+		["Karazhan"] = true,
+		["Lapidis Isle"] = true,
+		["Lower Karazhan Halls"] = true,
+		["Moomoo Grove"] = true,
+		["Scarlet Enclave"] = true,
+		["Stormwind Vault"] = true,
+		["Sunnyglade Valley"] = true,
+		["Tel'Abim"] = true,
+		["Winter Veil Vale"] = true,
 		["Ahn'Qiraj"] = true,
 		["Alterac Mountains"] = true,
 		["Alterac Valley"] = true,
@@ -126,7 +146,7 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Winterspring"] = true,
 		["Zul'Farrak"] = true,
 		["Zul'Gurub"] = true,
-		
+
 		-- Burning Crusade
 		
 		-- Subzones used for displaying instances.
@@ -135,7 +155,7 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Auchindoun"] = true,
 		["The Bone Wastes"] = true, -- Substitute for Auchindoun, since this is what shows on the minimap.
 		["Coilfang Reservoir"] = true, -- Not used yet.
-		
+
 		["Azuremyst Isle"] = true,
 		["Bloodmyst Isle"] = true,
 		["Eversong Woods"] = true,
@@ -170,22 +190,203 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["The Arcatraz"] = true,
 		["Eye of the Storm"] = true,
 		["Shattrath City"] = true,
-		["Karazhan"] = true,
 		["Caverns of Time"] = true,
 		["Zul'Aman"] = true,
+		["Battlegrounds"] = true,
+	}
+end)
 
-		-- Turtle WoW
-		["Amani'alor"] = true,
-		["Tel'Abim"] = true,
-		["Alah'thalas"] = true,
-		["Lapidis Isle"] = true,
-		["Gillijim's Isle"] = true,
-		["Scarlet Enclave"] = true,
+BabbleZone:RegisterTranslations("esES", function()
+	return {
+		["Blackrock Spire"] = "Aguja de Roca Negra",
+		["Alah'thalas"] = "Alah'thalas",
+		["Amani'Alor"] = "Amani'Alor",
+		["Crescent Grove"] = "Arboleda Creciente",
+		["Emerald Sanctum"] = "Santuario Esmeralda",
+		["Gillijim's Isle"] = "Isla de Gillijim",
+		["Gilneas City"] = "Ciudad de Gilneas",
+		["Gilneas"] = "Gilneas",
+		["Hateforge Quarry"] = "Cantera de Forja del Odio",
+		["Icepoint Rock"] = "Roca Punto de Hielo",
+		["Karazhan Crypt"] = "Cripta de Karazhan",
+		["Karazhan"] = "Karazhan",
+		["Lapidis Isle"] = "Isla Lapidis",
+		["Lower Karazhan Halls"] = "Salas del Bajo Karazhan",
+		["Moomoo Grove"] = "Bosque de Moomoo",
+		["Scarlet Enclave"] = "Enclave Escarlata",
+		["Stormwind Vault"] = "Bóveda de Ventormenta",
+		["Sunnyglade Valley"] = "Valle del Clarosoleado",
+		["Tel'Abim"] = "Tel'Abim",
+		["Winter Veil Vale"] = "Valle del Velo de Invierno",
+		["Ahn'Qiraj"] = "Ahn'Qiraj",
+		["Alterac Mountains"] = "Montañas de Alterac",
+		["Alterac Valley"] = "Valle de Alterac",
+		["Arathi Basin"] = "Cuenca de Arathi",
+		["Arathi Highlands"] = "Tierras Altas de Arathi",
+		["Ashenvale"] = "Vallefresno",
+		["Auberdine"] = "Auberdine",
+		["Azshara"] = "Azshara",
+		["Badlands"] = "Tierras Inhóspitas",
+		["The Barrens"] = "Los Baldíos",
+		["Blackfathom Deeps"] = "Cavernas de Brazanegra",
+		["Blackrock Depths"] = "Profundidades de Roca Negra",
+		["Blackrock Mountain"] = "Montaña Roca Negra",
+		["Blackrock Spire"] = "Cumbre de Roca Negra",
+		["Blackwing Lair"] = "Guarida Alanegra",
+		["Blasted Lands"] = "Las Tierras Devastadas",
+		["Booty Bay"] = "Bahía del Botín",
+		["Burning Steppes"] = "Las Estepas Ardientes",
+		["Darkshore"] = "Costa Oscura",
+		["Darnassus"] = "Darnassus",
+		["The Deadmines"] = "Las Minas de la Muerte",
+		["Deadwind Pass"] = "Paso de la Muerte",
+		["Deeprun Tram"] = "Tren Subterráneo",
+		["Desolace"] = "Desolace",
+		["Dire Maul"] = "La Masacre",
+		["Dire Maul (North)"] = "La Masacre (Norte)",
+		["Dire Maul (East)"] = "La Masacre (Este)",
+		["Dire Maul (West)"] = "La Masacre (Oeste)",
+		["Dun Morogh"] = "Dun Morogh",
+		["Durotar"] = "Durotar",
+		["Duskwood"] = "Bosque del Ocaso",
+		["Dustwallow Marsh"] = "Marjal Revolcafango",
+		["Eastern Kingdoms"] = "Reinos del Este",
+		["Eastern Plaguelands"] = "Tierras de la Peste del Este",
+		["Elwynn Forest"] = "Bosque de Elwynn",
+		["Everlook"] = "Vista Eterna",
+		["Felwood"] = "Frondavil",
+		["Feralas"] = "Feralas",
+		["The Forbidding Sea"] = "Mar Adusto",
+		["Gadgetzan"] = "Gadgetzan",
+		["Gates of Ahn'Qiraj"] = "Portones de Ahn'Qiraj",
+		["Gnomeregan"] = "Gnomeregan",
+		["Grom'gol Base Camp"] = "Campamento Grom'gol",
+		["The Great Sea"] = "Mare Magnum",
+		["Hall of Legends"] = "Sala de las Leyendas",
+		["Hillsbrad Foothills"] = "Laderas de Trabalomas",
+		["The Hinterlands"] = "Tierras del Interior",
+		["Hyjal"] = "Hyjal",
+		["Ironforge"] = "Forjaz",
+		["Loch Modan"] = "Loch Modan",
+		["Lower Blackrock Spire"] = "Cumbre de Roca Negra Inferior",
+		["Maraudon"] = "Maraudon",
+		["Menethil Harbor"] = "Puerto Menethil",
+		["Molten Core"] = "Núcleo de Magma",
+		["Moonglade"] = "Claro de la Luna",
+		["Mulgore"] = "Mulgore",
+		["Naxxramas"] = "Naxxramas",
+		["Onyxia's Lair"] = "Guarida de Onyxia",
+		["Orgrimmar"] = "Orgrimmar",
+		["Ratchet"] = "Trinquete",
+		["Ragefire Chasm"] = "Sima Ígnea",
+		["Razorfen Downs"] = "Zahúrda Rajacieno",
+		["Razorfen Kraul"] = "Horado Rajacieno",
+		["Redridge Mountains"] = "Montañas Crestagrana",
+		["Ruins of Ahn'Qiraj"] = "Ruinas de Ahn'Qiraj",
+		["Scarlet Monastery"] = "Monasterio Escarlata",
+		["Scholomance"] = "Scholomance",
+		["Searing Gorge"] = "La Garganta de Fuego",
+		["Shadowfang Keep"] = "Castillo de Colmillo Oscuro",
+		["Silithus"] = "Silithus",
+		["Silverpine Forest"] = "Bosque de Argénteos",
+		["The Stockade"] = "Las Mazmorras",
+		["Stonetalon Mountains"] = "Sierra Espolón",
+		["Stormwind City"] = "Ciudad de Ventormenta",
+		["Stranglethorn Vale"] = "Vega de Tuercespina",
+		["Stratholme"] = "Stratholme",
+		["Swamp of Sorrows"] = "Pantano de las Penas",
+		["Tanaris"] = "Tanaris",
+		["Teldrassil"] = "Teldrassil",
+		["Temple of Ahn'Qiraj"] = "Templo de Ahn'Qiraj",
+		["The Temple of Atal'Hakkar"] = "El Templo de Atal'Hakkar",
+		["Theramore Isle"] = "Isla Theramore",
+		["Thousand Needles"] = "Las Mil Agujas",
+		["Thunder Bluff"] = "Cima del Trueno",
+		["Tirisfal Glades"] = "Claros de Tirisfal",
+		["Uldaman"] = "Uldaman",
+		["Un'Goro Crater"] = "Cráter de Un'Goro",
+		["Undercity"] = "Entrañas",
+		["Upper Blackrock Spire"] = "Cumbre de Roca Negra Superior",
+		["Wailing Caverns"] = "Cuevas de los Lamentos",
+		["Warsong Gulch"] = "Garganta Grito de Guerra",
+		["Western Plaguelands"] = "Tierras de la Peste del Oeste",
+		["Westfall"] = "Páramos de Poniente",
+		["Wetlands"] = "Los Humedales",
+		["Winterspring"] = "Cuna del Invierno",
+		["Zul'Farrak"] = "Zul'Farrak",
+		["Zul'Gurub"] = "Zul'Gurub",
+
+-- Burning Crusade
+		
+		-- Subzones used for displaying instances.
+		["Plaguewood"] = "Bosque de la Peste",
+		["Hellfire Citadel"] = "Ciudadela del Fuego Infernal",
+		["Auchindoun"] = "Auchindoun",
+		["The Bone Wastes"] = "El Vertedero de Huesos", -- Substitute for Auchindoun, since this is what shows on the minimap.
+		["Coilfang Reservoir"] = "Reserva Colmillo Torcido", -- Not used yet.
+		
+		["Azuremyst Isle"] = "Isla Bruma Azur",
+		["Bloodmyst Isle"] = "Isla Bruma de Sangre",
+		["Eversong Woods"] = "Bosque Canción Eterna",
+		["Ghostlands"] = "Tierras Fantasma",
+		["The Exodar"] = "El Exodar",
+		["Silvermoon City"] = "Ciudad de Lunargenta",
+		["Shadowmoon Valley"] = "Valle Sombraluna",
+		["Black Temple"] = "Templo Oscuro",
+		["Terokkar Forest"] = "Bosque de Terokkar",
+		["Auchenai Crypts"] = "Criptas Auchenai",
+		["Mana-Tombs"] = "Tumbas de Maná",
+		["Shadow Labyrinth"] = "Laberinto de las Sombras",
+		["Sethekk Halls"] = "Salas Sethekk",
+		["Hellfire Peninsula"] = "Península del Fuego Infernal",
+		["The Dark Portal"] = "El Portal Oscuro",
+		["Hellfire Ramparts"] = "Murallas del Fuego Infernal",
+		["The Blood Furnace"] = "El Horno de Sangre",
+		["The Shattered Halls"] = "Las Salas Arrasadas",
+		["Magtheridon's Lair"] = "Guarida de Magtheridon",
+		["Nagrand"] = "Nagrand",
+		["Zangarmarsh"] = "Marisma de Zangar",
+		["The Slave Pens"] = "Recinto de los Esclavos",
+		["The Underbog"] = "La Sotiénaga",
+		["The Steamvault"] = "La Cámara de Vapor",
+		["Serpentshrine Cavern"] = "Caverna Santuario Serpiente",
+		["Blade's Edge Mountains"] = "Montañas Filospada",
+		["Gruul's Lair"] = "Guarida de Gruul",
+		["Netherstorm"] = "Tormenta Abisal",
+		["Tempest Keep"] = "El Castillo de la Tempestad",
+		["The Mechanar"] = "El Mechanar",
+		["The Botanica"] = "EL Invernáculo",
+		["The Arcatraz"] = "El Arcatraz",
+		["Eye of the Storm"] = "Ojo de la Tormenta",
+		["Shattrath City"] = "Ciudad de Shattrath",
+		["Karazhan"] = "Karazhan",
+		["Caverns of Time"] = "Cavernas del Tiempo",
+		["Zul'Aman"] = "Zul'Aman",
 	}
 end)
 
 BabbleZone:RegisterTranslations("ruRU", function()
 	return {
+		["Blackrock Spire"] = "Чернокаменный шпиль",
+		["Alah'thalas"] = "Ала'талас",
+		["Amani'Alor"] = "Амани'Aлор",
+		["Crescent Grove"] = "Роща полумесяца",
+		["Emerald Sanctum"] = "Изумрудное святилище",
+		["Gillijim's Isle"] = "Остров Гилиджима",
+		["Gilneas City"] = "Гилнеас Сити",
+		["Gilneas"] = "Гилнеас",
+		["Hateforge Quarry"] = "Карьер Kузница ненависти",
+		["Icepoint Rock"] = "Ледяная точка Рок",
+		["Karazhan Crypt"] = "Каражанский склеп",
+		["Karazhan"] = "Залы Нижнего Каражана",
+		["Lapidis Isle"] = "Остров Лапидис",
+		["Lower Karazhan Halls"] = "Карасан",
+		["Moomoo Grove"] = "Муму Гроув",
+		["Scarlet Enclave"] = "Анклав Алого ордена",
+		["Stormwind Vault"] = "Хранилище Штормграда",
+		["Sunnyglade Valley"] = "Солнечная поляна",
+		["Tel'Abim"] = "Тэл'абим",
+		["Winter Veil Vale"] = "Долина Зимнего Покрова",
 		["Ahn'Qiraj"] = "Ан'Кираж",
 		["Alterac Mountains"] = "Альтеракские горы",
 		["Alterac Valley"] = "Альтеракская долина",
@@ -284,7 +485,7 @@ BabbleZone:RegisterTranslations("ruRU", function()
 		["Winterspring"] = "Зимние Ключи",
 		["Zul'Farrak"] = "Зул'Фаррак",
 		["Zul'Gurub"] = "Зул'Гуруб",
-		
+
 		-- Burning Crusade
 		
 		-- Subzones used for displaying instances.
@@ -293,7 +494,7 @@ BabbleZone:RegisterTranslations("ruRU", function()
 		["Auchindoun"] = "Аукиндон",
 		["The Bone Wastes"] = "Костяные пустоши", -- Substitute for Auchindoun, since this is what shows on the minimap.
 		["Coilfang Reservoir"] = "Резервуар Кривого Клыка", -- Not used yet.
-		
+
 		["Azuremyst Isle"] = "Остров Лазурной Дымки",
 		["Bloodmyst Isle"] = "Остров Кровавой Дымки",
 		["Eversong Woods"] = "Леса Вечной Песни",
@@ -337,9 +538,31 @@ end)
 local expansion = loadstring("return function(...) return ... end") and true or false
 BabbleZone:RegisterTranslations("deDE", function()
 	return {
+		["Blackrock Spire"] = "Schwarzfelsturm",
+		["Alah'thalas"] = "Alah'thalas",
+		["Amani'Alor"] = "Amani'Alor",
+		["Crescent Grove"] = "Halbmondhain",
+		["Emerald Sanctum"] = "Smaragdgrünes Heiligtum",
+		["Gillijim's Isle"] = "Gilijims Insel",
+		["Gilneas City"] = "Gilneas-Stadt",
+		["Gilneas"] = "Gilneas",
+		["Hateforge Quarry"] = "Hassschmiede-Steinbruch",
+		["Icepoint Rock"] = "Eispunkt Felsen",
+		["Karazhan Crypt"] = "Karazhan-Krypta",
+		["Karazhan"] = "Karazhan",
+		["Lapidis Isle"] = "Lapidis-Insel",
+		["Lower Karazhan Halls"] = "Untere Karazhan-Hallen",
+		["Moomoo Grove"] = "Moomoo Hain",
+		["Scarlet Enclave"] = "Scharlachrote Enklave",
+		["Stormwind Vault"] = "Sturmwind-Tresor",
+		["Sunnyglade Valley"] = "Sonnigelichtung-Tal",
+		["Tel'Abim"] = "Tel'Abim",
+		["Winter Veil Vale"] = "Winterschleiertal",
 		["Ahn'Qiraj"] = "Ahn'Qiraj",
+		["Alah'thalas"] = "Alah'thalas",
 		["Alterac Mountains"] = "Alteracgebirge",
 		["Alterac Valley"] = "Alteractal",
+		["Amani'Alor"] = "Amani'Alor",
 		["Arathi Basin"] = "Arathibecken",
 		["Arathi Highlands"] = "Arathihochland",
 		["Ashenvale"] = "Ashenvale",
@@ -433,7 +656,7 @@ BabbleZone:RegisterTranslations("deDE", function()
 		["Winterspring"] = "Winterspring",
 		["Zul'Farrak"] = "Zul'Farrak",
 		["Zul'Gurub"] = "Zul'Gurub",
-		
+
 		-- Burning Crusade
 		
 		-- Subzones used for displaying instances.
@@ -442,7 +665,7 @@ BabbleZone:RegisterTranslations("deDE", function()
 		["Auchindoun"] = "Auchindoun",
 		["The Bone Wastes"] = "Die Knochen-Vergeudungen", -- Substitute for Auchindoun, since this is what shows on the minimap.
 		["Coilfang Reservoir"] = "Spulenrei\195\159zahn Reservat",
-		
+
 		["Azuremyst Isle"] = "Azurmythosinsel",
 		["Bloodmyst Isle"] = "Blutmythosinsel",
 		["Eversong Woods"] = "Immersangwald",
@@ -485,9 +708,31 @@ end)
 
 BabbleZone:RegisterTranslations("frFR", function()
 	return {
+		["Blackrock Spire"] = "Flèche Rochenoire",
+		["Alah'thalas"] = "Alah'thalas",
+		["Amani'Alor"] = "Amani'Alor",
+		["Crescent Grove"] = "Bosquet en Croissant",
+		["Emerald Sanctum"] = "Sanctuaire d'Émeraude",
+		["Gillijim's Isle"] = "L'île de Gilijim",
+		["Gilneas City"] = "Ville de Gilnéas",
+		["Gilneas"] = "Gilneas",
+		["Hateforge Quarry"] = "Carrière de Haine Forge",
+		["Icepoint Rock"] = "Rocher du point de glace",
+		["Karazhan Crypt"] = "Crypte de Karajan",
+		["Karazhan"] = "Karajan",
+		["Lapidis Isle"] = "Île Lapidis",
+		["Lower Karazhan Halls"] = "Salles inférieures de Karazhan",
+		["Moomoo Grove"] = "Bosquet de Meuhmeuh",
+		["Scarlet Enclave"] = "Enclave Écarlate",
+		["Stormwind Vault"] = "Coffre de Hurlevent",
+		["Sunnyglade Valley"] = "Vallée de la Glade Ensoleillée",
+		["Tel'Abim"] = "Tel'Abim",
+		["Winter Veil Vale"] = "Vallée du Voile d'Hiver",
 		["Ahn'Qiraj"] = "Ahn'Qiraj",
+		["Alah'thalas"] = "Alah'thalas",
 		["Alterac Mountains"] = "Montagnes d'Alterac",
 		["Alterac Valley"] = "Vall\195\169e d'Alterac",
+		["Amani'Alor"] = "Amani'Alor",
 		["Arathi Basin"] = "Bassin d'Arathi",
 		["Arathi Highlands"] = "Hautes-terres d'Arathi",
 		["Ashenvale"] = "Ashenvale",
@@ -581,7 +826,7 @@ BabbleZone:RegisterTranslations("frFR", function()
 		["Winterspring"] = "Berceau-de-l'Hiver (Winterspring)",
 		["Zul'Farrak"] = "Zul'Farrak",
 		["Zul'Gurub"] = "Zul'Gurub",
-		
+
 		-- Burning Crusade
 		
 		-- Subzones used for displaying instances.
@@ -590,7 +835,7 @@ BabbleZone:RegisterTranslations("frFR", function()
 		["Auchindoun"] = "Auchindoun",
 		--["The Bone Wastes"] = true, -- Substitute for Auchindoun, since this is what shows on the minimap.
 		["Coilfang Reservoir"] = "R\195\169servoir de Glissecroc", -- Not used yet.
-		
+
 		["Azuremyst Isle"] = "Ile de Brume-azure",
 		["Bloodmyst Isle"] = "Ile de Brume-sang",
 		["Eversong Woods"] = "Bois des Chants \195\169ternels",
@@ -633,6 +878,26 @@ end)
 
 BabbleZone:RegisterTranslations("zhCN", function()
 	return {
+		["Blackrock Spire"] = "黑石尖塔",
+		["Alah'thalas"] = "阿拉萨拉斯",
+		["Amani'Alor"] = "阿曼尼阿洛尔",
+		["Crescent Grove"] = "新月格罗夫",
+		["Emerald Sanctum"] = "翡翠圣所",
+		["Gillijim's Isle"] = "吉利吉姆岛",
+		["Gilneas City"] = "吉尔尼斯市",
+		["Gilneas"] = "吉尔尼斯",
+		["Hateforge Quarry"] = "仇恨锻造采石场",
+		["Icepoint Rock"] = "冰点岩",
+		["Karazhan Crypt"] = "卡拉赞地穴",
+		["Karazhan"] = "卡拉赞",
+		["Lapidis Isle"] = "拉皮迪斯岛",
+		["Lower Karazhan Halls"] = "下卡拉赞大厅",
+		["Moomoo Grove"] = "哞哞格罗夫",
+		["Scarlet Enclave"] = "猩红飞地",
+		["Stormwind Vault"] = "暴风城金库",
+		["Sunnyglade Valley"] = "阳光格莱德山谷",
+		["Tel'Abim"] = "特拉比姆",
+		["Winter Veil Vale"] = "冬幕谷",
 		["Ahn'Qiraj"] = "安其拉",
 		["Alterac Mountains"] = "奥特兰克山脉",
 		["Alterac Valley"] = "奥特兰克山谷",
@@ -682,7 +947,7 @@ BabbleZone:RegisterTranslations("zhCN", function()
 		["Hyjal"] = "海加尔",
 		["Ironforge"] = "铁炉堡",
 		["Loch Modan"] = "洛克莫丹",
-		--		["Lower Blackrock Spire"] = true,
+--		["Lower Blackrock Spire"] = true,
 		["Maraudon"] = "玛拉顿",
 		["Menethil Harbor"] = "米奈希尔港",
 		["Molten Core"] = "熔火之心",
@@ -720,7 +985,7 @@ BabbleZone:RegisterTranslations("zhCN", function()
 		["Uldaman"] = "奥达曼",
 		["Un'Goro Crater"] = "安戈洛环形山",
 		["Undercity"] = "幽暗城",
-		--		["Upper Blackrock Spire"] = true,
+--		["Upper Blackrock Spire"] = true,
 		["Wailing Caverns"] = "哀嚎洞穴",
 		["Warsong Gulch"] = "战歌峡谷",
 		["Western Plaguelands"] = "西瘟疫之地",
@@ -729,32 +994,32 @@ BabbleZone:RegisterTranslations("zhCN", function()
 		["Winterspring"] = "冬泉谷",
 		["Zul'Farrak"] = "祖尔法拉克",
 		["Zul'Gurub"] = "祖尔格拉布",
-		
+
 		["Plaguewood"] = "病木林",
-		--		["Auchindoun"] = true,
-		--		["The Bone Wastes"] = true,
-		--		["Coilfang Reservoir"] = true,
-		
-		--		["Auchenai Crypts"] = true,
-		--		["Mana-Tombs"] = true,
-		--		["Shadow Labyrinth"] = true,
-		--		["Sethekk Halls"] = true,
-		--		["Hellfire Ramparts"] = true,
-		--		["The Blood Furnace"] = true,
-		--		["The Shattered Halls"] = true,
-		--		["Magtheridon's Lair"] = true,
-		--		["The Slave Pens"] = true,
-		--		["The Underbog"] = true,
-		--		["The Steamvault"] = true,
-		--		["Serpentshrine Cavern"] = true,
-		--		["Blade's Edge Mountains"] = true,
-		--		["Gruul's Lair"] = true,
-		--		["Netherstorm"] = true,
-		--		["The Mechanar"] = true,
-		--		["The Botanica"] = true,
-		--		["The Arcatraz"] = true,
-		--		["Eye of the Storm"] = true,
-		
+--		["Auchindoun"] = true,
+--		["The Bone Wastes"] = true,
+--		["Coilfang Reservoir"] = true,
+
+--		["Auchenai Crypts"] = true,
+--		["Mana-Tombs"] = true,
+--		["Shadow Labyrinth"] = true,
+--		["Sethekk Halls"] = true,
+--		["Hellfire Ramparts"] = true,
+--		["The Blood Furnace"] = true,
+--		["The Shattered Halls"] = true,
+--		["Magtheridon's Lair"] = true,
+--		["The Slave Pens"] = true,
+--		["The Underbog"] = true,
+--		["The Steamvault"] = true,
+--		["Serpentshrine Cavern"] = true,
+--		["Blade's Edge Mountains"] = true,
+--		["Gruul's Lair"] = true,
+--		["Netherstorm"] = true,
+--		["The Mechanar"] = true,
+--		["The Botanica"] = true,
+--		["The Arcatraz"] = true,
+--		["Eye of the Storm"] = true,
+
 		-- Burning Crusade
 		["Azuremyst Isle"] = "秘蓝岛", --some of the following tranlation need to checked after the release
 		["Bloodmyst Isle"] = "秘血岛",
@@ -779,12 +1044,32 @@ BabbleZone:RegisterTranslations("zhCN", function()
 		["Shattrath City"] = "沙尔特拉城",
 		["Karazhan"] = "卡拉赞",
 		["Caverns of Time"] = "时光之穴",
-		--		["Zul'Aman"] = true,
+--		["Zul'Aman"] = true,
 	}
 end)
 
 BabbleZone:RegisterTranslations("zhTW", function()
 	return {
+		["Blackrock Spire"] = "黑石尖塔",
+		["Alah'thalas"] = "阿拉薩拉斯",
+		["Amani'Alor"] = "阿曼尼阿洛爾",
+		["Crescent Grove"] = "新月樹林",
+		["Emerald Sanctum"] = "翡翠聖所",
+		["Gillijim's Isle"] = "吉利吉姆島",
+		["Gilneas City"] = "吉爾尼斯市",
+		["Gilneas"] = "吉爾尼斯",
+		["Hateforge Quarry"] = "仇恨鍛造採石場",
+		["Icepoint Rock"] = "冰點岩",
+		["Karazhan Crypt"] = "卡拉贊地穴",
+		["Karazhan"] = "卡拉贊",
+		["Lapidis Isle"] = "拉皮迪斯島",
+		["Lower Karazhan Halls"] = "下卡拉贊大廳",
+		["Moomoo Grove"] = "哞哞格羅夫",
+		["Scarlet Enclave"] = "猩紅飛地",
+		["Stormwind Vault"] = "暴風城金庫",
+		["Sunnyglade Valley"] = "陽光格萊德山谷",
+		["Tel'Abim"] = "特拉比姆",
+		["Winter Veil Vale"] = "冬幕谷",
 		["Ahn'Qiraj"] = "安其拉",
 		["Alterac Mountains"] = "奧特蘭克山脈",
 		["Alterac Valley"] = "奧特蘭克山谷",
@@ -881,32 +1166,32 @@ BabbleZone:RegisterTranslations("zhTW", function()
 		["Winterspring"] = "冬泉谷",
 		["Zul'Farrak"] = "祖爾法拉克",
 		["Zul'Gurub"] = "祖爾格拉布",
-		
+
 		["Plaguewood"] = "病木林",
-		--		["Auchindoun"] = true,
-		--		["The Bone Wastes"] = true,
-		--		["Coilfang Reservoir"] = true,
-		
-		--		["Auchenai Crypts"] = true,
-		--		["Mana-Tombs"] = true,
-		--		["Shadow Labyrinth"] = true,
-		--		["Sethekk Halls"] = true,
-		--		["Hellfire Ramparts"] = true,
-		--		["The Blood Furnace"] = true,
-		--		["The Shattered Halls"] = true,
-		--		["Magtheridon's Lair"] = true,
-		--		["The Slave Pens"] = true,
-		--		["The Underbog"] = true,
-		--		["The Steamvault"] = true,
-		--		["Serpentshrine Cavern"] = true,
-		--		["Blade's Edge Mountains"] = true,
-		--		["Gruul's Lair"] = true,
-		--		["Netherstorm"] = true,
-		--		["The Mechanar"] = true,
-		--		["The Botanica"] = true,
-		--		["The Arcatraz"] = true,
-		--		["Eye of the Storm"] = true,
-		
+--		["Auchindoun"] = true,
+--		["The Bone Wastes"] = true,
+--		["Coilfang Reservoir"] = true,
+
+--		["Auchenai Crypts"] = true,
+--		["Mana-Tombs"] = true,
+--		["Shadow Labyrinth"] = true,
+--		["Sethekk Halls"] = true,
+--		["Hellfire Ramparts"] = true,
+--		["The Blood Furnace"] = true,
+--		["The Shattered Halls"] = true,
+--		["Magtheridon's Lair"] = true,
+--		["The Slave Pens"] = true,
+--		["The Underbog"] = true,
+--		["The Steamvault"] = true,
+--		["Serpentshrine Cavern"] = true,
+--		["Blade's Edge Mountains"] = true,
+--		["Gruul's Lair"] = true,
+--		["Netherstorm"] = true,
+--		["The Mechanar"] = true,
+--		["The Botanica"] = true,
+--		["The Arcatraz"] = true,
+--		["Eye of the Storm"] = true,
+
 		-- Burning Crusade
 		["Azuremyst Isle"] = "秘藍島",
 		["Bloodmyst Isle"] = "秘血島",
@@ -931,12 +1216,32 @@ BabbleZone:RegisterTranslations("zhTW", function()
 		["Shattrath City"] = "沙爾特拉城",
 		["Karazhan"] = "卡拉贊",
 		["Caverns of Time"] = "時光洞穴",
-		--		["Zul'Aman"] = true,
+--		["Zul'Aman"] = true,
 	}
 end)
 
 BabbleZone:RegisterTranslations("koKR", function()
 	return {
+		["Blackrock Spire"] = "검은바위 첨탑",
+		["Alah'thalas"] = "알라탈라스",
+		["Amani'Alor"] = "아마니알로",
+		["Crescent Grove"] = "초승달 숲",
+		["Emerald Sanctum"] = "에메랄드 신성한 장소",
+		["Gillijim's Isle"] = "길리짐의 섬",
+		["Gilneas City"] = "길니아스 시",
+		["Gilneas"] = "길니아스",
+		["Hateforge Quarry"] = "증오 대장간 채석장",
+		["Icepoint Rock"] = "빙점 바위",
+		["Karazhan Crypt"] = "카라잔 토굴",
+		["Karazhan"] = "카라잔",
+		["Lapidis Isle"] = "라피디스 섬",
+		["Lower Karazhan Halls"] = "하층 카라잔 전당",
+		["Moomoo Grove"] = "음매음매 작은 숲",
+		["Scarlet Enclave"] = "스칼렛 영토",
+		["Stormwind Vault"] = "스톰윈드 금고",
+		["Sunnyglade Valley"] = "써니 글레이드 밸리",
+		["Tel'Abim"] = "텔아빔",
+		["Winter Veil Vale"] = "겨울맞이 골짜기",
 		["Ahn'Qiraj"] = "안퀴라즈",
 		["Alterac Mountains"] = "알터랙 산맥",
 		["Alterac Valley"] = "알터랙 계곡",
@@ -1033,7 +1338,7 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Winterspring"] = "여명의 설원",
 		["Zul'Farrak"] = "줄파락",
 		["Zul'Gurub"] = "줄구룹",
-		
+
 		-- Burning Crusade
 		
 		-- Subzones used for displaying instances.
@@ -1042,7 +1347,7 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Auchindoun"] = "아킨둔",
 		["The Bone Wastes"] = "해골 무덤", -- Substitute for Auchindoun, since this is what shows on the minimap.
 		["Coilfang Reservoir"] = "갈퀴송곳니 저수지",
-		
+
 		["Azuremyst Isle"] = "하늘안개 섬",
 		["Bloodmyst Isle"] = "핏빛안개 섬",
 		["Eversong Woods"] = "영원노래 숲",
